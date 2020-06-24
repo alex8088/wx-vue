@@ -1,0 +1,78 @@
+.weui-page {
+    background-color: var(--weui-BG-0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    z-index: 1; // fix 滑动几次后可滚动区域会卡住的问题
+}
+
+@animation-duration: 0.3s;
+
+.forward-enter-active {
+    animation: forwardSlideIn @animation-duration forwards;
+}
+
+.forward-leave-active {
+    animation: forwardSlideOut @animation-duration forwards;
+}
+
+.back-enter-active {
+    animation: backSlideIn @animation-duration forwards;
+}
+
+.back-leave-active {
+    animation: backSlideOut @animation-duration forwards;
+}
+
+@keyframes forwardSlideIn {
+    from {
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes forwardSlideOut {
+    from {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translate3d(-100%, 0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes backSlideIn {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes backSlideOut {
+    from {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+    }
+}

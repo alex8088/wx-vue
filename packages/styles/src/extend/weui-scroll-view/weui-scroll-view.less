@@ -1,0 +1,90 @@
+.weui-pulling {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M513.005388 1024L0.193035 576.449409l42.306737-48.483844 470.425185 410.552304 468.478754-410.504045 42.403254 48.387326z' p-id='6910' fill='%23aaaaaa'%3E%3C/path%3E%3Cpath d='M479.803447 0h64.344848v965.172723h-64.344848z' fill='%23aaaaaa'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+    background-size: 100%;
+}
+
+.weui-scroll-view {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.weui-scroll-view_pull-refresh {
+    text-align: center;
+    font-size: 0;
+    padding-top: 7px;
+    margin-top: -55px;
+
+    &.pull {
+        .weui-scroll-view__pull {
+            .weui-pulling {
+                transform: translate3d(0, 0, 0) rotate(180deg);
+                transition: transform .2s linear;
+            }
+        }
+    }
+
+    &.refresh {
+        .weui-scroll-view__pull {
+            display: none;
+        }
+
+        .weui-scroll-view__refresh {
+            display: block;
+        }
+    }
+}
+
+.weui-scroll-view_container {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    user-select: none;
+}
+
+.weui-scroll-view__pull {
+    display: block;
+
+    &-text {
+        display: block;
+        line-height: 28px;
+        font-size: 14px;
+        // color: var(--weui-FG-1);
+        color: #bbbbbb;
+    }
+}
+
+.weui-scroll-view__refresh {
+    display: none;
+    line-height: 48px;
+
+    .weui-loading {
+
+        height: 28px;
+        width: 28px;
+    }
+}
+
+.weui-scroll-view__load {
+    text-align: center;
+    font-size: 14px;
+    line-height: 45px;
+
+    &-text {
+        display: inline-block;
+        vertical-align: middle;
+        // color: var(--weui-FG-1);
+        color: #bbbbbb;
+        margin-left: 4px;
+    }
+}

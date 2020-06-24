@@ -1,0 +1,220 @@
+[
+  {
+    "name": "布局",
+    "icon": "layout.png",
+    "components": [
+      {
+        "name": "Flex",
+        "path": "/flex",
+        "icon": "flex.png"
+      },
+      {
+        "name": "Grid",
+        "path": "/grid",
+        "icon": "grid.png"
+      },
+      {
+        "name": "List",
+        "path": "/list",
+        "icon": "list.png"
+      },
+      {
+        "name": "Panel",
+        "path": "/panel",
+        "icon": "panel.png"
+      },
+      {
+        "name": "Scroll View",
+        "path": "/scrollview",
+        "icon": "scroll-view.png"
+      }
+    ],
+    "expand": false
+  },
+  {
+    "name": "基础",
+    "icon": "common.png",
+    "components": [
+      {
+        "name": "Action Sheet",
+        "path": "/actionsheet",
+        "icon": "action-sheet.png"
+      },
+      {
+        "name": "Badge",
+        "path": "/badge",
+        "icon": "badge.png"
+      },
+      {
+        "name": "Button",
+        "path": "/button",
+        "icon": "button.png"
+      },
+      {
+        "name": "Carousel",
+        "path": "/carousel",
+        "icon": "carousel.png"
+      },
+      {
+        "name": "Divider",
+        "path": "/divider",
+        "icon": "divider.png"
+      },
+      {
+        "name": "Footer",
+        "path": "/footer",
+        "icon": "footer.png"
+      },
+      {
+        "name": "Half-screen Dialog",
+        "path": "/halfscreendialog",
+        "icon": "half-screen-dialog.png"
+      },
+      {
+        "name": "Link",
+        "path": "/link",
+        "icon": "link.png"
+      },
+      {
+        "name": "Load More",
+        "path": "/loadmore",
+        "icon": "load-more.png"
+      },
+      {
+        "name": "Progress",
+        "path": "/progress",
+        "icon": "progress.png"
+      },
+      {
+        "name": "Search Bar",
+        "path": "/searchbar",
+        "icon": "search-bar.png"
+      },
+      {
+        "name": "Slider",
+        "path": "/slider",
+        "icon": "slider.png"
+      }
+    ],
+    "expand": false
+  },
+  {
+    "name": "表单",
+    "icon": "form.png",
+    "components": [
+      {
+        "name": "Checkbox",
+        "path": "/checkbox",
+        "icon": "checkbox.png"
+      },
+      {
+        "name": "Date Picker",
+        "path": "/datepicker",
+        "icon": "date-picker.png"
+      },
+      {
+        "name": "Form",
+        "path": "/form",
+        "icon": "form2.png"
+      },
+      {
+        "name": "Image Uploader",
+        "path": "/imageuploader",
+        "icon": "image-uploader.png"
+      },
+      {
+        "name": "Input",
+        "path": "/input",
+        "icon": "input.png"
+      },
+      {
+        "name": "Picker",
+        "path": "/picker",
+        "icon": "select.png"
+      },
+      {
+        "name": "Radio",
+        "path": "/radio",
+        "icon": "radio.png"
+      },
+      {
+        "name": "Switch",
+        "path": "/switch",
+        "icon": "switch.png"
+      },
+      {
+        "name": "Textarea",
+        "path": "/textarea",
+        "icon": "textarea.png"
+      },
+      {
+        "name": "Time Picker",
+        "path": "/timepicker",
+        "icon": "time-picker.png"
+      }
+    ],
+    "expand": false
+  },
+  {
+    "name": "交互",
+    "icon": "notifation.png",
+    "components": [
+      {
+        "name": "Alert",
+        "path": "/alert",
+        "icon": "alert.png"
+      },
+      {
+        "name": "Confirm",
+        "path": "/confirm",
+        "icon": "confirm.png"
+      },
+      {
+        "name": "Loading",
+        "path": "/loading",
+        "icon": "loading.png"
+      },
+      {
+        "name": "Toast",
+        "path": "/toast",
+        "icon": "toast.png"
+      },
+      {
+        "name": "Tooltip",
+        "path": "/tooltip",
+        "icon": "tooltip.png"
+      }
+    ],
+    "expand": false
+  },
+  {
+    "name": "导航",
+    "icon2": "navigation",
+    "icon": "navigation.png",
+    "components": [
+      {
+        "name": "Navigation View",
+        "path": "/navigationview",
+        "icon": "navigation-view.png"
+      },
+      {
+        "name": "Tab",
+        "path": "/tab",
+        "icon": "tab.png"
+      },
+      {
+        "name": "Tabbar",
+        "path": "/tabbar",
+        "icon": "tabbar.png"
+      }
+    ],
+    "expand": false
+  },
+  {
+    "name": "更多",
+    "icon2": "more",
+    "icon": "more.png",
+    "components": [],
+    "expand": false
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "name": "wx-vue",
+  "version": "2.0.0",
+  "description": "Mobile UI Components based on Vue.js and WeUI",
+  "author": "alex.wei <alexwei114@163.com>",
+  "keywords": [
+    "wx-vue",
+    "weui",
+    "vue",
+    "vue components",
+    "mobile ui"
+  ],
+  "files": [
+    "lib",
+    "types"
+  ],
+  "homepage": "https://alex8088.github.io/wxvue/docs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alex8088/wx-vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alex8088/wx-vue/issues"
+  },
+  "main": "lib/wx-vue.common.js",
+  "style": "lib/styles/index.css",
+  "typings": "types/index.d.ts",
+  "unpkg": "lib/wx-vue.umd.min.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name wx-vue --dest lib packages/index.js && rimraf lib/demo.html",
+    "lib:theme": "npm --prefix packages/styles run build",
+    "lib:all": "npm run lib && node ./build/lib-cli.js && npm run lib:theme && node ./build/css-cli.js",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-router": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "Android >= 4.0",
+    "iOS >= 8"
+  ]
+}

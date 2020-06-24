@@ -1,0 +1,20 @@
+.weui-toast {
+    @toast-position-bottom-offset: 60px;
+
+    &.weui-toast_text {
+        height: auto;
+        line-height: 32px;
+    }
+
+    &.weui-toast_bottom {
+        transform: translateX(-50%);
+        top: auto;
+        bottom: @toast-position-bottom-offset
+    }
+
+    .weui-icon-fail-no-circle {
+        color: rgba(255, 255, 255, 0.9);
+        width: 55px;
+        height: 55px;
+    }
+}

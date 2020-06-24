@@ -1,0 +1,33 @@
+.weui-links {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+    .weui-flex__item {
+        position: relative;
+
+        &:not(:last-child)::before {
+            content: " ";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 1px;
+            bottom: 0;
+            border-right: 1px solid var(--weui-FG-3);
+            color: var(--weui-FG-3);
+            transform-origin: 100% 0;
+            transform: scaleX(0.5);
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+    }
+}
+
+.weui-link {
+    text-decoration: none;
+
+    &.weui-link_mini {
+        font-size: 14px;
+    }
+}

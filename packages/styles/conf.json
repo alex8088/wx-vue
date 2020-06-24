@@ -1,0 +1,230 @@
+[
+  {
+    "action-sheet": [
+      "mask",
+      "animate",
+      "action-sheet"
+    ]
+  },
+  {
+    "alert": [
+      "mask",
+      "animate",
+      "dialog"
+    ]
+  },
+  {
+    "badge": [
+      "badge"
+    ]
+  },
+  {
+    "button": [
+      "loading",
+      "button"
+    ]
+  },
+  {
+    "carousel": [
+      "carousel"
+    ]
+  },
+  {
+    "checkbox": [
+      "checkbox"
+    ]
+  },
+  {
+    "confirm": [
+      "mask",
+      "animate",
+      "dialog"
+    ]
+  },
+  {
+    "date-picker": [
+      "mask",
+      "animate",
+      "half-screen-dialog",
+      "cell",
+      "picker"
+    ]
+  },
+  {
+    "divider": [
+      "load-more"
+    ]
+  },
+  {
+    "flex": [
+      "flex"
+    ]
+  },
+  {
+    "footer": [
+      "footer"
+    ]
+  },
+  {
+    "form": [
+      "cell",
+      "form"
+    ]
+  },
+  {
+    "grid": [
+      "grid"
+    ]
+  },
+  {
+    "half-screen-dialog": [
+      "mask",
+      "animate",
+      "half-screen-dialog"
+    ]
+  },
+  {
+    "image-uploader": [
+      "icon",
+      "loading",
+      "uploader",
+      "gallery"
+    ]
+  },
+  {
+    "input": [
+      "button"
+    ]
+  },
+  {
+    "link": [
+      "flex",
+      "link"
+    ]
+  },
+  {
+    "list": [
+      "cell",
+      "list"
+    ]
+  },
+  {
+    "load-more": [
+      "loading",
+      "load-more"
+    ]
+  },
+  {
+    "loading": [
+      "mask",
+      "animate",
+      "loading",
+      "toast"
+    ]
+  },
+  {
+    "navigation-view": [
+      "navigation-view"
+    ]
+  },
+  {
+    "panel": [
+      "cell",
+      "panel",
+      "media-box"
+    ]
+  },
+  {
+    "picker": [
+      "mask",
+      "animate",
+      "half-screen-dialog",
+      "cell",
+      "picker"
+    ]
+  },
+  {
+    "plugins": [
+      "icon",
+      "mask",
+      "animate",
+      "dialog",
+      "loading",
+      "toast",
+      "tooltips"
+    ]
+  },
+  {
+    "progress": [
+      "icon",
+      "progress"
+    ]
+  },
+  {
+    "radio": [
+      "icon",
+      "radio"
+    ]
+  },
+  {
+    "scroll-view": [
+      "scroll-view"
+    ]
+  },
+  {
+    "search-bar": [
+      "icon",
+      "search-bar"
+    ]
+  },
+  {
+    "slider": [
+      "slider"
+    ]
+  },
+  {
+    "switch": [
+      "switch"
+    ]
+  },
+  {
+    "tab": [
+      "tab"
+    ]
+  },
+  {
+    "tabbar": [
+      "badge",
+      "tab"
+    ]
+  },
+  {
+    "textarea": [
+      "textarea"
+    ]
+  },
+  {
+    "time-picker": [
+      "mask",
+      "animate",
+      "half-screen-dialog",
+      "cell",
+      "picker"
+    ]
+  },
+  {
+    "toast": [
+      "mask",
+      "animate",
+      "loading",
+      "toast"
+    ]
+  },
+  {
+    "tooltip": [
+      "mask",
+      "animate",
+      "tooltips"
+    ]
+  }
+]

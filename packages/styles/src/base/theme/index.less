@@ -1,0 +1,27 @@
+@import 'fn';
+
+body {
+    .varsLight();
+}
+
+@media (prefers-color-scheme: dark) {
+    body:not([data-weui-theme='light']) {
+        .varsDark();
+    }
+}
+
+body[data-weui-theme='dark'] {
+    .varsDark();
+}
+
+// BG color
+.setColor(--weui-BG-COLOR-ACTIVE, #ececec, overlay(rgba(255, 255, 255, 0.05), #2c2c2c));
+
+// BTN color
+.setColor(--weui-BTN-DISABLED-FONT-COLOR, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+.setColor(--weui-BTN-DEFAULT-BG, #f2f2f2, rgba(255, 255, 255, 0.08));
+.setColor(--weui-BTN-DEFAULT-COLOR, #06ae56, rgba(255, 255, 255, 0.8));
+.setColor(--weui-BTN-DEFAULT-ACTIVE-BG, overlay(rgba(0, 0, 0, 0.05), #f2f2f2), overlay(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.08)));
+
+// DIALOG Color
+.setColor(--weui-DIALOG-LINE-COLOR, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
