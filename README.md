@@ -68,7 +68,7 @@ new Vue({
 
 ## 链接
 
-- [更新日志](./RELEASE.md)
+- [更新日志](./CHANGELOG.md)
 - [意见反馈](https://github.com/alex8088/wx-vue/issues)
 - [weui](https://weui.io/)
 
