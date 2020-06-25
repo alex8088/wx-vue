@@ -29,6 +29,7 @@ import Panel from '../views/Panel.vue'
 import Picker from '../views/Picker'
 import Progress from '../views/Progress'
 import Radio from '../views/Radio'
+import Rate from '../views/Rate'
 import ScrollView from '../views/ScrollView'
 import ScrollViewSample from '../views/ScrollView-Sample'
 import ScrollViewEvents from '../views/ScrollView-Events'
@@ -186,6 +187,11 @@ const routes = [
     path: '/radio',
     name: 'Radio',
     component: Radio
+  },
+  {
+    path: '/rate',
+    name: 'Rate',
+    component: Rate
   },
   {
     path: '/scrollview',

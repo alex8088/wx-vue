@@ -86,6 +86,11 @@
         "icon": "progress.png"
       },
       {
+        "name": "Rate",
+        "path": "/rate",
+        "icon": "rate.png"
+      },
+      {
         "name": "Search Bar",
         "path": "/searchbar",
         "icon": "search-bar.png"

@@ -24,6 +24,7 @@ import Picker from './picker'
 import Plugins from './plugins'
 import Progress from './progress'
 import Radio from './radio'
+import Rate from './rate'
 import ScrollView from './scroll-view'
 import SearchBar from './search-bar'
 import Slider from './slider'
@@ -72,6 +73,7 @@ const components = [
   Picker,
   Progress,
   Radio,
+  Rate,
   ScrollView,
   SearchBar, 
   Slider,
@@ -145,6 +147,7 @@ export default {
   Plugins,
   Progress,
   Radio,
+  Rate,
   ScrollView,
   SearchBar, 
   Slider,
