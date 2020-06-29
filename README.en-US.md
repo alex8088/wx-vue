@@ -40,7 +40,7 @@ wx-vue is a mobile UI library based on [Vue.js](http://vuejs.org/) and [WeUI](ht
 
 ## Documentation
 
-Get started with the [documentation](https://alex8088.github.io/wxvue/docs)
+Get started with the [documentation](https://alex8088.github.io/wxvue/docs/#/)
 
 ## Installation
 

@@ -40,7 +40,7 @@ wx-vue 是一套基于 [Vue.js](http://vuejs.org/) 和 [WeUI](https://weui.io/) 
 
 ## 文档
 
-[Documentation](https://alex8088.github.io/wxvue/docs)
+[Documentation](https://alex8088.github.io/wxvue/docs/#/)
 
 ## 安装
 
