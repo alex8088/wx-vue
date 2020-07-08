@@ -27,6 +27,7 @@ import Radio from './radio'
 import Rate from './rate'
 import ScrollView from './scroll-view'
 import SearchBar from './search-bar'
+import { Sidebar, SidebarItem } from './sidebar'
 import Slider from './slider'
 import Switch from './switch'
 import { Tab, TabItem } from './tab'
@@ -75,7 +76,9 @@ const components = [
   Radio,
   Rate,
   ScrollView,
-  SearchBar, 
+  SearchBar,
+  Sidebar,
+  SidebarItem,
   Slider,
   Switch,
   Tab,
@@ -149,7 +152,8 @@ export default {
   Radio,
   Rate,
   ScrollView,
-  SearchBar, 
+  SearchBar,
+  Sidebar,
   Slider,
   Switch,
   Tab,

@@ -1,0 +1,79 @@
+@import "../../base/fn";
+
+@weuiSidebarWidth: 92px;
+@weuiSidebarLineHeight: 16px;
+@weuiSidebarColor: var(--weui-FG-0);
+@weuiSidebarDisabledColor: var(--weui-FG-1);
+@weuiSidebarBg: var(--weui-BG-1);
+@weuiSidebarActiveBg: var(--weui-BG);
+@weuiSidebarContentBg: var(--weui-BG);
+@weuiSidebarFontSize: 14px;
+@weuiSidebarPadding: 18px 12px;
+@weuiSidebarActiveBorderWidth: 4px;
+@weuiSidebarActiveBorderHeight: 20px;
+@weuiSidebarActiveBorderColor: @weuiColorPrimary;
+
+.weui-sidebar {
+    display: flex;
+    flex-direction: row;
+
+    .weui-sidebar__bar {
+        height: 100%;
+        position: relative;
+        width: @weuiSidebarWidth;
+        user-select: none;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        background-color: @weuiSidebarBg;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        --sidebar-border-width: @weuiSidebarActiveBorderWidth;
+        --sidebar-border-color: @weuiSidebarActiveBorderColor;
+    }
+
+    .weui-sidebar__content {
+        flex: 1;
+        display: block;
+        padding: 5px 10px;
+        background-color: @weuiSidebarContentBg;
+    }
+
+    .weui-sidebar__item {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        padding: @weuiSidebarPadding;
+        overflow: hidden;
+        color: @weuiSidebarColor;
+        font-size: @weuiSidebarFontSize;
+        line-height: @weuiSidebarLineHeight;
+        background-color: @weuiSidebarBg;
+        text-align: center;
+
+        .text_wrap();
+
+        .setTapColor();
+
+        &.weui-sidebar__item_on {
+            background-color: @weuiSidebarActiveBg;
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: var(--sidebar-border-width);
+                height: @weuiSidebarActiveBorderHeight;
+                background-color: var(--sidebar-border-color);
+                transform: translateY(-50%);
+                content: '';
+            }
+        }
+
+        &.weui-sidebar__item_disabled {
+            color: @weuiSidebarDisabledColor;
+        }
+    }
+}
