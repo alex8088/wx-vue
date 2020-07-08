@@ -1,6 +1,6 @@
 <template>
   <div :class="{'weui-tab': fixed}">
-    <div class="weui-tab__bar" :class="[{'weui-tab__bar_scrollable': scrollabe}]">
+    <div class="weui-tab__bar" :class="[{'weui-tab__bar_scrollable': scrollable}]">
       <div class="weui-tab__bar-area" ref="bar">
         <div
           :class="['weui-tab__item', {'weui-tab__item_on': item.active && !item.disabled}, {'weui-tab__item_disabled': item.disabled}]"
@@ -50,7 +50,7 @@ export default {
     fixed() {
       return this.mode === "fixed";
     },
-    scrollabe() {
+    scrollable() {
       return this.children.length > this.scrollThreshold;
     }
   },
@@ -87,7 +87,7 @@ export default {
       return $el ? $el[0] : null;
     },
     scrollToActiveTabItem() {
-      if (this.scrollabe) {
+      if (this.scrollable) {
         const $el = this.getCurrentTabItem();
         if ($el) {
           const $bar = this.$refs.bar;
