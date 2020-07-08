@@ -203,6 +203,11 @@
         "icon": "navigation-view.png"
       },
       {
+        "name": "Sidebar",
+        "path": "/sidebar",
+        "icon": "sidebar.png"
+      },
+      {
         "name": "Tab",
         "path": "/tab",
         "icon": "tab.png"

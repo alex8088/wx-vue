@@ -35,6 +35,7 @@ import ScrollViewSample from '../views/ScrollView-Sample'
 import ScrollViewEvents from '../views/ScrollView-Events'
 import ScrollViewProps from '../views/ScrollView-Props'
 import SearchBar from '../views/SearchBar'
+import Sidebar from '../views/Sidebar'
 import Slider from '../views/Slider.vue'
 import Switch from '../views/Switch'
 import Tab from '../views/Tab'
@@ -217,6 +218,11 @@ const routes = [
     path: '/searchbar',
     name: 'SearchBar',
     component: SearchBar
+  },
+  {
+    path: '/sidebar',
+    name: 'Sidebar',
+    component: Sidebar
   },
   {
     path: '/slider',
