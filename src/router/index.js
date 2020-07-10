@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
 import ActionSheet from '../views/ActionSheet'
+import Ad from '../views/Ad'
 import Alert from '../views/Alert.vue'
 import Badge from '../views/Badge'
 import Button from '../views/Button.vue'
@@ -59,6 +60,11 @@ const routes = [
     path: '/actionsheet',
     name: 'ActionSheet',
     component: ActionSheet
+  },
+  {
+    path: '/ad',
+    name: 'Ad',
+    component: Ad
   },
   {
     path: '/alert',

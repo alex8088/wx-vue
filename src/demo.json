@@ -229,7 +229,13 @@
     "name": "更多",
     "icon2": "more",
     "icon": "more.png",
-    "components": [],
+    "components": [
+      {
+        "name": "AD",
+        "path": "/ad",
+        "icon": "ad.png"
+      }
+    ],
     "expand": false
   }
 ]
