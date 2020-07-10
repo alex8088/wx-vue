@@ -27,6 +27,11 @@
         "name": "Scroll View",
         "path": "/scrollview",
         "icon": "scroll-view.png"
+      },
+      {
+        "name": "Sticky",
+        "path": "/sticky",
+        "icon": "sticky.png"
       }
     ],
     "expand": false

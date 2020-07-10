@@ -37,6 +37,7 @@ import ScrollViewProps from '../views/ScrollView-Props'
 import SearchBar from '../views/SearchBar'
 import Sidebar from '../views/Sidebar'
 import Slider from '../views/Slider.vue'
+import Sticky from '../views/Sticky'
 import Switch from '../views/Switch'
 import Tab from '../views/Tab'
 import TabFixed from '../views/Tab-Fixed'
@@ -228,6 +229,11 @@ const routes = [
     path: '/slider',
     name: 'Slider',
     component: Slider
+  },
+  {
+    path: '/sticky',
+    name: 'Sticky',
+    component: Sticky
   },
   {
     path: '/switch',
