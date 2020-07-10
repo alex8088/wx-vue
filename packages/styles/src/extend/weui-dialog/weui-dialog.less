@@ -1,3 +1,29 @@
 .weui-dialog__btn {
     user-select: none;
 }
+
+.weui-ad {
+    .weui-dialog {
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    .weui-dialog__hd,
+    .weui-dialog__bd {
+        padding: 0
+    }
+
+    .weui-dialog__ft {
+        justify-content: center;
+
+        .weui-icon-close-circle-thin {
+            background-color: var(--weui-BG);
+            height: 32px;
+            width: 32px;
+        }
+
+        &::after {
+            border: none;
+        }
+    }
+}

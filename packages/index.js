@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import { ActionSheet, ActionSheetItem } from './action-sheet'
+import Ad from './ad'
 import Alert from './alert'
 import Badge from './badge'
 import Button from './button'
@@ -39,6 +40,7 @@ import TimePicker from './time-picker'
 const components = [
   ActionSheet,
   ActionSheetItem,
+  Ad,
   Alert,
   Badge,
   Button,
@@ -115,6 +117,7 @@ export default {
   install,
   ActionSheet,
   // ActionSheetItem,
+  Ad,
   Alert,
   Badge,
   Button,
