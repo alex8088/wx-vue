@@ -193,6 +193,11 @@
     ]
   },
   {
+    "sticky": [
+      "sticky"
+    ]
+  },
+  {
     "switch": [
       "switch"
     ]

@@ -29,6 +29,7 @@ import ScrollView from './scroll-view'
 import SearchBar from './search-bar'
 import { Sidebar, SidebarItem } from './sidebar'
 import Slider from './slider'
+import Sticky from './sticky'
 import Switch from './switch'
 import { Tab, TabItem } from './tab'
 import { Tabbar, TabbarItem } from './tabbar'
@@ -80,6 +81,7 @@ const components = [
   Sidebar,
   SidebarItem,
   Slider,
+  Sticky,
   Switch,
   Tab,
   TabItem,
@@ -155,6 +157,7 @@ export default {
   SearchBar,
   Sidebar,
   Slider,
+  Sticky,
   Switch,
   Tab,
   // TabItem,
