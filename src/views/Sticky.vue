@@ -15,7 +15,7 @@
       </wx-sticky>
       <div style="text-align: center; margin-top: 120px;">请继续滚动</div>
     </div>
-    <div class="sticky-sp sticky-sp-500">Placeholder</div>
+    <div class="sticky-sp sticky-sp-700">Placeholder</div>
     <page-footer></page-footer>
   </div>
 </template>
