@@ -33,8 +33,7 @@
         "path": "/sticky",
         "icon": "sticky.png"
       }
-    ],
-    "expand": false
+    ]
   },
   {
     "name": "基础",
@@ -59,6 +58,11 @@
         "name": "Carousel",
         "path": "/carousel",
         "icon": "carousel.png"
+      },
+      {
+        "name": "Collapse",
+        "path": "/collapse",
+        "icon": "collapse.png"
       },
       {
         "name": "Divider",
@@ -105,8 +109,7 @@
         "path": "/slider",
         "icon": "slider.png"
       }
-    ],
-    "expand": false
+    ]
   },
   {
     "name": "表单",
@@ -162,8 +165,7 @@
         "path": "/timepicker",
         "icon": "time-picker.png"
       }
-    ],
-    "expand": false
+    ]
   },
   {
     "name": "交互",
@@ -194,12 +196,10 @@
         "path": "/tooltip",
         "icon": "tooltip.png"
       }
-    ],
-    "expand": false
+    ]
   },
   {
     "name": "导航",
-    "icon2": "navigation",
     "icon": "navigation.png",
     "components": [
       {
@@ -222,12 +222,10 @@
         "path": "/tabbar",
         "icon": "tabbar.png"
       }
-    ],
-    "expand": false
+    ]
   },
   {
     "name": "更多",
-    "icon2": "more",
     "icon": "more.png",
     "components": [
       {
@@ -235,7 +233,6 @@
         "path": "/ad",
         "icon": "ad.png"
       }
-    ],
-    "expand": false
+    ]
   }
 ]

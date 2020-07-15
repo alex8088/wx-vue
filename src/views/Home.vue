@@ -2,27 +2,25 @@
   <div class="home">
     <page-header :title="title" :desc="desc"></page-header>
     <div class="page__bd page__bd_spacing">
-      <ul>
-        <li v-for="(item, index) in demo" :key="index">
-          <div @click="item.expand = !item.expand">
+      <wx-collapse>
+        <wx-collapse-item v-for="(item, index) in demo" :key="index" :name="index">
+          <template #header>
             <wx-flex>
               <wx-flex-item tag="p">{{item.name}}</wx-flex-item>
               <img :src="require(`../assets/${item.icon}`)" alt />
             </wx-flex>
-          </div>
-          <transition name="accordion">
-            <wx-grid v-if="item.expand">
-              <wx-grid-item
-                v-for="subItem in item.components"
-                :key="subItem.name"
-                :label="subItem.name"
-                :icon="require(`../assets/${subItem.icon}`)"
-                :to="{path: subItem.path}"
-              ></wx-grid-item>
-            </wx-grid>
-          </transition>
-        </li>
-      </ul>
+          </template>
+          <wx-grid>
+            <wx-grid-item
+              v-for="subItem in item.components"
+              :key="subItem.name"
+              :label="subItem.name"
+              :icon="require(`../assets/${subItem.icon}`)"
+              :to="{path: subItem.path}"
+            ></wx-grid-item>
+          </wx-grid>
+        </wx-collapse-item>
+      </wx-collapse>
     </div>
     <page-footer></page-footer>
   </div>
