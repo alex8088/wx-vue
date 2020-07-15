@@ -6,6 +6,7 @@ import Badge from './badge'
 import Button from './button'
 import { Carousel, CarouselItem } from './carousel'
 import Checkbox from './checkbox'
+import { Collapse, CollapseItem } from './collapse'
 import Confirm from './confirm'
 import DatePicker from './date-picker'
 import Divider from './divider'
@@ -47,6 +48,8 @@ const components = [
   Carousel,
   CarouselItem,
   Checkbox,
+  Collapse,
+  CollapseItem,
   Confirm,
   DatePicker,
   Divider,
@@ -124,6 +127,8 @@ export default {
   Carousel,
   // CarouselItem,
   Checkbox,
+  Collapse,
+  // CollapseItem,
   Confirm,
   DatePicker,
   Divider,

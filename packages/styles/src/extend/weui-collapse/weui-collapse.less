@@ -1,0 +1,95 @@
+@import "../../base/fn";
+
+@weuiCollapseBG: var(--weui-BG-2);
+@weuiCollapseSpaceing: 8px;
+@weuiCollapsePaddingTopBottom: 12px;
+@weuiCollapsePaddingLeftRight: 20px;
+@weuiCollapseTitleFontSize: 14px;
+@weuiCollapseTransitionDuration: .2s;
+
+.weui-collapse {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.weui-collapse__item {
+    background-color: @weuiCollapseBG;
+
+    &:not(:first-child) {
+        margin-top: @weuiCollapseSpaceing;
+    }
+
+    &.weui-collapse__item-expanded {
+        .weui-collapse__title {
+            &:after {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
+
+.weui-collapse__hd {
+    position: relative;
+    user-select: none;
+
+    .weui-collapse__title {
+        position: relative;
+        padding: @weuiCollapsePaddingTopBottom @weuiCollapsePaddingLeftRight;
+        font-size: @weuiCollapseTitleFontSize;
+
+        &:after {
+            content: " ";
+
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            width: 12px;
+            height: 24px;
+            background-color: currentColor;
+            color: @weuiTextColorTips;
+            mask-position: 0 0;
+            mask-repeat: no-repeat;
+            mask-size: 100%;
+            mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2.454%206.58l1.06-1.06%205.78%205.779a.996.996%200%20010%201.413l-5.78%205.779-1.06-1.061%205.425-5.425-5.425-5.424z%22%20fill%3D%22%23B2B2B2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E);
+            margin-top: -12px;
+            transition: transform .3s cubic-bezier(.4, .6, .2, 1);
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.weui-collapse__bd {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        .setTopLine(@weuiLineColorLight);
+    }
+}
+
+.weui-collapse__content {
+    padding: @weuiCollapsePaddingTopBottom @weuiCollapsePaddingLeftRight;
+}
+
+.collapse-transition {
+    transition: @weuiCollapseTransitionDuration height ease-in-out, @weuiCollapseTransitionDuration padding-top ease-in-out, @weuiCollapseTransitionDuration padding-bottom ease-in-out;
+}
+
+.collapse-enter {
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.collapse-enter-active {
+    transition: opacity .3s;
+    transform: translateY(0);
+}
+
+// .collapse-leave-active {
+//     transition: opacity .3s;
+// }
+
+// .collapse-leave-to {
+//     opacity: 0;
+// }

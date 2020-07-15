@@ -42,6 +42,11 @@
     ]
   },
   {
+    "collapse": [
+      "collapse"
+    ]
+  },
+  {
     "confirm": [
       "mask",
       "animate",
