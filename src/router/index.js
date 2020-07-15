@@ -9,6 +9,7 @@ import Badge from '../views/Badge'
 import Button from '../views/Button.vue'
 import Carousel from '../views/Carousel'
 import Checkbox from '../views/Checkbox'
+import Collapse from '../views/Collapse'
 import Confirm from '../views/Confirm.vue'
 import DatePicker from '../views/DatePicker'
 import Divider from '../views/Divider'
@@ -90,6 +91,11 @@ const routes = [
     path: '/checkbox',
     name: 'Checkbox',
     component: Checkbox
+  },
+  {
+    path: '/collapse',
+    name: 'Collapse',
+    component: Collapse
   },
   {
     path: '/confirm',
