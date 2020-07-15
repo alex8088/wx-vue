@@ -1,5 +1,20 @@
 # Release
 
+### v2.0.1 (_2020-07-20_)
+
+#### Feature
+
+- 新增 `Ad` 广告组件
+- 新增 `Collapse` 折叠面板组件
+- 新增 `Rate` 评分组件
+- 新增 `Sidebar` 侧边导航栏组件
+- 新增 `Sticky` 粘性布局组件
+
+#### Perf
+
+- `Navigation-View` 优化导航切换算法，新增 `keep-alive` 属性，支持页面缓存
+
+
 ### v2.0.0 (_2020-05-20_)
 
 #### Feature
