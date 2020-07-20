@@ -1,7 +1,7 @@
 export default {
   name: 'WxNavigationView',
   props: {
-    keepAlive: [String, RegExp]
+    keepAlive: [String, Array, RegExp]
   },
   data() {
     return {
